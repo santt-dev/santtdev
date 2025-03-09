@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background-color: #1e1e1e;
     padding: 20px;
@@ -123,7 +122,6 @@ ul li {
     border-radius: 5px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -152,7 +150,6 @@ footer {
     width: 40px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -177,7 +174,7 @@ footer {
         display: flex;
     }
 }
-/* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -186,7 +183,6 @@ footer {
     scroll-behavior: smooth;
 }
 
-/* Tema */
 body {
     background-color: #121212;
     color: #ffffff;
@@ -194,7 +190,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Animação de entrada */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -206,22 +201,59 @@ body {
     }
 }
 
-/* Header */
 header {
     background-color: #1e1e1e;
     padding: 20px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
-
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
     flex-wrap: wrap;
+    padding: 10px 20px;
 }
+
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 0;
+}
+
+#menu li {
+    margin: 0;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.3s;
+    position: relative;
+    padding: 10px 15px;
+}
+
+#menu a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00d9ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease-in-out;
+}
+
+#menu a:hover::after {
+    width: 100%;
+}
+
 
 .menu-toggle {
     display: none;
