@@ -28,12 +28,12 @@ nav {
 }
 
 .menu-toggle {
+    text-align: center;
     display: none;
     cursor: pointer;
 }
 
 .menu-toggle .bar {
-    display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
