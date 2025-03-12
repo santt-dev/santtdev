@@ -68,9 +68,9 @@ nav {
 }
 
 .perfil img {
-    width: 150px;
-    border-radius: 50%;
-    border: 4px solid #00d9ff;
+   width: 150px;
+  border-radius: 30%;
+  border: 2px solid #000;
 }
 
 .descricao h1 {
